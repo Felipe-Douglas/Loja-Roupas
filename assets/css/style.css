@@ -333,24 +333,24 @@ html, body {
     background: #2A2A2A;
     padding: 4rem;
     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.rodape__site {
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.rodape > div {
+.rodape__site > div {
     display: flex;
     flex-direction: column;
     height: 200px;
 }
 
-.rodape > div > ul > h4 {
-    font-family: 'Noto Sans';
-    font-weight: 800;
-    color: #FFF;
-    font-size: 1.2rem;
-}
-
-.rodape > div > ul {
+.rodape__site > div > ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -358,6 +358,38 @@ html, body {
     height: 150px;
 }
 
-.rodape > div > ul > li {
+.rodape__site > div > ul > h4 {
+    font-family: 'Noto Sans';
+    font-weight: 800;
     color: #FFF;
+    font-size: 1.2rem;
+}
+
+.rodape__site > div > ul > li {
+    color: #FFF;
+    font-weight: 600;
+}
+
+.rodape__site > div > ul > li > img {
+    width: 140px;
+    height: 100px;
+}
+
+.rodape__copyright {
+    padding: 2rem;
+    border-top: 1px solid #FFF;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.copyright__social {
+    display: flex;
+}
+
+.copyright__social i {
+    margin: 10px;
 }
