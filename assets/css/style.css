@@ -25,9 +25,11 @@ html, body {
 
 .cabecalho__logo {
     height: 100px;
-    width: 120px;
-    margin-left: 60px;
+    width: 200px;
+    border-radius: 20px;
 }
+
+/* Menu */
 
 .menu__link {
     margin: 4px;
@@ -39,9 +41,31 @@ html, body {
     color: #000;    
 }
 
-.ativo {
+
+.menu__link:nth-child(5)::after {
+    content: '\f078';
+    font-family: FontAwesome;
+    font-style: normal;
+    margin: 0 10px;
+}
+
+.menu__link:nth-child(6)::after {
+    content: '\f078';
+    font-family: FontAwesome;
+    font-style: normal;
+    margin: 0 10px;
+}
+
+.ativo { /* Quando um link estiver ativo */
     color: #C0C0C0;
 }
+
+/* Menu mobile */
+
+.menu-mobile {
+    display: none;
+}
+
 
 /* Conteudo principal */
 
@@ -104,6 +128,8 @@ html, body {
     color: #000;
 }
 
+/* Imagens de destaque */
+
 .destaques__categorias > div:nth-child(1) {
     background: linear-gradient(rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .5) 50%), url(../images/shop-for-clothing-clothes-shop-on-hanger-at-the-modern-shop-boutique.png) center center / cover;
     grid-column: 1 / 3;
@@ -140,7 +166,7 @@ html, body {
     border-top: 1px solid rgba(0, 0, 0, .3);
 }
 
-.container__titulo {
+.container__titulo { /* Formatação do titulo */
     font-size: 1.8rem;
     padding-left: 5rem;
     font-family: 'Noto Sans', sans-serif;
@@ -148,7 +174,7 @@ html, body {
     width: 70%;
 }
 
-.container__subtitulo {
+.container__subtitulo { /* Formatação do titulo */
     font-weight: 400;
     font-size: 1.2rem;
     font-style: italic;
@@ -156,6 +182,8 @@ html, body {
     padding-left: 5rem;
     margin-bottom: 4rem;
 }
+
+/* Produtos */
 
 .container__produtos {
     margin: 20px 0;
@@ -192,14 +220,21 @@ html, body {
     color: #C0C0C0;
 }
 
-.classificacao {
+.card__informacao__tamanho {
     display: flex;
 }
 
-.estrela {
-    height: 11px;
-    width: 12px;
+/* Tamanhos disponiveis */
+
+.tamanho {
+    margin: 4px;
+    padding: 4px;
+    text-align: center;
+    border: 1px solid #C0C0C0;
+    cursor: pointer;
 }
+
+/* Setas do carrousel */
 
 .arrows {
     height: 40px;
@@ -209,28 +244,29 @@ html, body {
     border: 1px solid #C0C0C0;  
 }
 
-.arrows:hover {
-    background: #000;
-    color: #FFF;
+/* Explore */
+
+.explore {
+    display: flex;
+    padding: 0 5rem;
+    border: 1px solid red;
 }
 
-.swiper-navBtn{
-    color: #6E93f7;
-    transition: color 0.3s ease;
-  }
-  .swiper-navBtn:hover{
-    color: #4070F4;
-  }
-  .swiper-navBtn::before,
-  .swiper-navBtn::after{
-    font-size: 35px;
-  }
-  .swiper-button-next{
-    right: 0;
-  }
-  .swiper-button-prev{
-    left: 0;
-  }
+.explore__text {
+    display: flex;
+    max-width: 600px;
+}
+
+.explore__text_paragrafo {
+    text-align: justify;
+    width: 50%;
+    margin: 30px 0;
+    color: #ADADAD;
+}
+
+.explore__imagens {
+    display: flex;
+}
 
 /* Social midia */
 
@@ -312,6 +348,8 @@ html, body {
     cursor: pointer;
 }
 
+/* Contatos */
+
 .contatos {
     display: flex;
     justify-content: space-between;
@@ -324,10 +362,11 @@ html, body {
     margin-bottom: 10px;
 }
 
-
 .contatos > div > p {
     color: #C0C0C0;
 }
+
+/* Rodape */
 
 .rodape {
     background: #2A2A2A;
@@ -338,6 +377,8 @@ html, body {
     flex-wrap: wrap;
 }
 
+/* Informações gerais */
+
 .rodape__site {
     display: flex;
     justify-content: space-around;
@@ -347,7 +388,7 @@ html, body {
 .rodape__site > div {
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 300px;
 }
 
 .rodape__site > div > ul {
@@ -355,7 +396,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 150px;
+    height: 200px;
 }
 
 .rodape__site > div > ul > h4 {
@@ -363,17 +404,22 @@ html, body {
     font-weight: 800;
     color: #FFF;
     font-size: 1.2rem;
+    margin: 10px 0;
 }
 
 .rodape__site > div > ul > li {
     color: #FFF;
-    font-weight: 600;
+    font-weight: 500;
+    margin: 10px 0;
 }
 
 .rodape__site > div > ul > li > img {
-    width: 140px;
-    height: 100px;
+    height: 140px;
+    width: 100%;
+    border-radius: 20px;
 }
+
+/* Copyright */
 
 .rodape__copyright {
     padding: 2rem;
