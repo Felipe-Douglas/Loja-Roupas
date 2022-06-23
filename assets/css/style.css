@@ -1,5 +1,6 @@
 /* Importando a font do google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600;700;800&display=swap');
 
 /* Reset do css */
 * {
@@ -130,25 +131,33 @@ html, body {
 }
 
 .container { /* Formatação do container */
-    padding: 5rem 2rem;
+    padding: 3rem 1rem;
     margin: 10px;
     border-top: 1px solid rgba(0, 0, 0, .3);
 }
 
 .container__titulo {
     font-size: 1.8rem;
+    padding-left: 5rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 800;
+    width: 60%;
 }
 
 .container__subtitulo {
     font-weight: 400;
     font-size: 1.2rem;
+    font-style: italic;
     color: #C0C0C0;
+    padding-left: 5rem;
+    margin-bottom: 4rem;
 }
 
 .container__produtos {
     margin: 20px 0;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .container__card {
@@ -188,6 +197,19 @@ html, body {
     width: 12px;
 }
 
+.arrows {
+    height: 40px;
+    width: 40px;
+    background: none; 
+    cursor: pointer;
+    border: 1px solid #C0C0C0;  
+}
+
+.arrows:hover {
+    background: #000;
+    color: #FFF;
+}
+
 .swiper-navBtn{
     color: #6E93f7;
     transition: color 0.3s ease;
@@ -205,3 +227,103 @@ html, body {
   .swiper-button-prev{
     left: 0;
   }
+
+/* Social midia */
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social__image {
+    width: 182px;
+    height: 200px;
+    color: transparent;
+    cursor: pointer;
+}
+
+.icone {
+    background: rgba(0, 0, 0, .3);
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+
+.social > div:nth-child(1) {
+    background: url(../images/social-midia-1.jpg) center center / cover;
+}
+
+.social > div:nth-child(2) {
+    background: url(../images/social-midia-2.jpg) center center / cover;
+}
+
+
+.social > div:nth-child(3) {
+    background: url(../images/social-midia-3.jpg) center center / cover;
+}
+
+.social > div:nth-child(4) {
+    background: url(../images/social-midia-4.jpg) center center / cover;
+}
+
+.social > div:nth-child(5) {
+    background: url(../images/social-midia-5.jpg) center center / cover;
+}
+
+.social > div:nth-child(6) {
+    background: url(../images/social-midia-6.jpg) center center / cover;
+}
+
+/* Formulario */
+
+.promocoes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.promocoes__formulario {
+    display: flex;
+    margin-left: 3rem;
+}
+
+.form__input {
+    height: 1.2rem;
+    padding: 10px;
+    margin-left: 2rem;
+    width: 35%;
+}
+
+.form__button {
+    margin-left: 2rem;
+    background: #000;
+    color: #FFF;
+    font-size: 15px;
+    padding: 10px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.contatos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 420px;
+}
+
+.contatos > div {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.contatos > div > ul {
+    list-style: none;
+} 
+
+.contatos > div > ul li {
+    color: #C0C0C0;
+}
