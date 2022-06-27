@@ -16,14 +16,52 @@
         <img src="assets/images/logo.png" class="cabecalho__logo" alt="Logo Cabrito & CIA">
 
         <nav class="menu">
-            <a href="#" class="menu__link ativo">Home</a>
-            <a href="#" class="menu__link">Para Homens</a>
-            <a href="#" class="menu__link">Para Mulheres</a>
-            <a href="#" class="menu__link">Para Crianças</a>
-            <a href="#" class="menu__link">Acessórios</a>
-            <a href="#" class="menu__link">Categorias</a>
-        </nav>
+            <ul class="menu__lista">
+                <li class="menu__item">
+                    <a href="#" class="menu__link ativo">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Para Homens</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Para Mulheres</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Para Crianças</a>
+                </li>
+                <li class="menu__item drop__menu__acessorio">
+                    <a href="#" class="menu__link drop__acessorio">Acessórios</a>
 
+                    <ul class="submenu__acessorios">
+                        <li class="submenu__acessorios__item">
+                            <a href="#" class="submenu__acessorios__link">Cateira</a> 
+                        </li>
+                        <li class="submenu__acessorios__item">
+                            <a href="#" class="submenu__acessorios__link">Chapeus</a> 
+                        </li>
+                        <li class="submenu__acessorios__item">
+                            <a href="#" class="submenu__acessorios__link">Cinto</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item drop__menu__categoria">
+                    <a href="#" class="menu__link drop__categoria">Categorias</a>
+
+                    <ul class="submenu__categorias">
+                        <li class="submenu__categorias__item">
+                            <a href="#" class="submenu__categorias__link">Feminina</a> 
+                        </li>
+                        <li class="submenu__categorias__item">
+                            <a href="#" class="submenu__categorias__link">Masculina</a> 
+                        </li>
+                        <li class="submenu__categorias__item">
+                            <a href="#" class="submenu__categorias__link">Infantil</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
     </header>
 
     <main>
@@ -61,13 +99,13 @@
             <h2 class="container__titulo">Últimas novidade para os Homens</h2>
             <h3 class="container__subtitulo">Sempre os melhores produtos</h3>
 
-            <div class="container__produtos">
+            <div class="container__produtos produtos__masculinos">
 
-                <button class=" arrows">
+                <button class="arrows arrow-prev">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 
-                <article class="container__card">
+                <article class="container__card" id="atual">
                     <img src="assets/images/modelo-homem-1.jpg" class="container__card__image" alt="">
 
                     <div class="card__informacao">
@@ -116,7 +154,7 @@
                     </div>
                 </article>
 
-                <button class="arrows">
+                <button class="arrows arrow-next">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
 
